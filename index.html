@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Premium purified water solutions — clinical, modern, and accessible."
+    />
+    <title>Al Hana Drinking Water — Purity in Every Drop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader" aria-hidden="true">
+      <div class="drop" aria-hidden="true"></div>
+      <div class="preloader-text">Loading purity…</div>
+    </div>
+
+    <!-- Floating social -->
+    <aside class="social-float" aria-label="Quick contact">
+      <a
+        class="social-btn"
+        href="https://wa.me/971561979833"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Chat on WhatsApp"
+        title="WhatsApp"
+      >
+        <span class="social-icon" data-icon="whatsapp"></span>
+      </a>
+      <a
+        class="social-btn"
+        href="tel:+971561979833"
+        aria-label="Call us"
+        title="Call"
+      >
+        <span class="social-icon" data-icon="phone"></span>
+      </a>
+      <a
+        class="social-btn"
+        href="https://www.youtube.com/"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Watch video guides on YouTube"
+        title="YouTube"
+      >
+        <span class="social-icon" data-icon="youtube"></span>
+      </a>
+    </aside>
+
+    <!-- Sticky header -->
+    <header class="header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">Al Hana Drinking Water</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#products">Products</a>
+          <a class="nav-link" href="#about">About Us</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+
+        <button class="nav-toggle" type="button" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nav-drawer" aria-hidden="true">
+        <a class="drawer-link" href="#home">Home</a>
+        <a class="drawer-link" href="#products">Products</a>
+        <a class="drawer-link" href="#about">About Us</a>
+        <a class="drawer-link" href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="home">
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="./assets/hero-poster.jpg"
+        >
+          <!-- Drop your water-ripple video here: site/assets/hero-water.mp4 -->
+          <source src="./assets/hero-water.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="container hero-content">
+          <div class="hero-card glass reveal">
+            <p class="eyebrow">Purified Water Solutions</p>
+            <h1 class="hero-title">Purity in Every Drop</h1>
+            <p class="hero-subtitle">
+              Clinical-grade filtration with a refreshing, modern experience—from retail
+              bottles to industrial dispensers.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#products">Explore Our Range</a>
+              <a class="btn btn-ghost" href="#contact">Get a Quote</a>
+            </div>
+            <div class="hero-badges" aria-label="Trust indicators">
+              <span class="badge">Lab-tested</span>
+              <span class="badge">Sustainable packaging</span>
+              <span class="badge">Fast delivery</span>
+            </div>
+          </div>
+
+          <div class="hero-stats reveal">
+            <div class="stat glass">
+              <div class="stat-num">30+</div>
+              <div class="stat-label">Products</div>
+            </div>
+            <div class="stat glass">
+              <div class="stat-num">99.9%</div>
+              <div class="stat-label">Purity target</div>
+            </div>
+            <div class="stat glass">
+              <div class="stat-num">24/7</div>
+              <div class="stat-label">Support</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products -->
+      <section class="section" id="products">
+        <div class="container">
+          <div class="section-head">
+            <div class="reveal">
+              <h2 class="h2">Product Catalog</h2>
+              <p class="muted">
+                Browse by category—Retail, Office, and Industrial. Hover any card for a
+                quick view.
+              </p>
+            </div>
+            <div class="filters reveal" role="tablist" aria-label="Product categories">
+              <button class="chip is-active" data-filter="all" role="tab">
+                All
+              </button>
+              <button class="chip" data-filter="retail" role="tab">Retail</button>
+              <button class="chip" data-filter="office" role="tab">Office</button>
+              <button class="chip" data-filter="industrial" role="tab">
+                Industrial
+              </button>
+            </div>
+            <div class="search-wrap reveal" aria-label="Search products">
+              <label class="search-label" for="productSearch">Search products</label>
+              <div class="search-field">
+                <input
+                  id="productSearch"
+                  class="search-input"
+                  type="search"
+                  name="query"
+                  placeholder="Search bottles, dispensers, jugs, or packaging…"
+                  aria-label="Search products"
+                />
+                <button class="search-button" type="button" aria-label="Search">
+                  <span aria-hidden="true">🔎</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="parallax-wrap">
+            <div class="bento" id="productGrid" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section section-alt" id="about">
+        <div class="container">
+          <div class="split">
+            <div class="split-media reveal">
+              <div class="media-card glass">
+                <video
+                  class="about-video"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  poster="./assets/process-poster.jpg"
+                >
+                  <!-- Optional: site/assets/filtration-process.mp4 -->
+                  <source
+                    src="./assets/filtration-process.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <div class="media-caption">
+                  Multi-stage filtration, carefully monitored.
+                </div>
+              </div>
+            </div>
+
+            <div class="split-content reveal">
+              <h2 class="h2">About Us</h2>
+              <p class="lead">
+                Al Hana Drinking Water delivers purified water solutions designed for modern life—safe,
+                consistent, and effortless.
+              </p>
+              <div class="glass about-cards">
+                <div class="about-card">
+                  <div class="kicker">Mission</div>
+                  <p>
+                    Make high-purity water accessible across homes, workplaces, and
+                    industrial environments.
+                  </p>
+                </div>
+                <div class="about-card">
+                  <div class="kicker">Sustainability</div>
+                  <p>
+                    Reduce waste through responsible packaging, refill programs, and
+                    efficient distribution routes.
+                  </p>
+                </div>
+                <div class="about-card">
+                  <div class="kicker">Quality</div>
+                  <p>
+                    Standardized testing and traceable batches to meet strict
+                    hygiene-first expectations.
+                  </p>
+                </div>
+              </div>
+
+              <div class="about-actions">
+                <a class="btn btn-primary" href="#contact">Talk to an expert</a>
+                <a class="btn btn-ghost" href="#products">See products</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="h2">Contact Us</h2>
+            <p class="muted">
+              Get pricing, delivery timelines, or help choosing the right dispenser.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="glass contact-card reveal">
+              <form id="contactForm" class="form">
+                <div class="form-row">
+                  <label>
+                    <span>Name</span>
+                    <input
+                      name="name"
+                      type="text"
+                      autocomplete="name"
+                      placeholder="Your name"
+                      required
+                    />
+                  </label>
+                  <label>
+                    <span>Phone</span>
+                    <input
+                      name="phone"
+                      type="tel"
+                      autocomplete="tel"
+                      placeholder="+1 (555) 123-4567"
+                      required
+                    />
+                  </label>
+                </div>
+                <label>
+                  <span>Email</span>
+                  <input
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="you@company.com"
+                    required
+                  />
+                </label>
+                <label>
+                  <span>Message</span>
+                  <textarea
+                    name="message"
+                    rows="4"
+                    placeholder="Tell us what you need (Retail/Office/Industrial, volumes, delivery location)."
+                    required
+                  ></textarea>
+                </label>
+
+                <button class="btn btn-primary btn-full" type="submit">
+                  Send Message
+                </button>
+
+                <div class="form-foot">
+                  Prefer instant support?
+                  <a class="inline-link" href="https://wa.me/971561979833" target="_blank" rel="noreferrer"
+                    >Chat on WhatsApp</a
+                  >.
+                </div>
+              </form>
+            </div>
+
+            <div class="glass contact-card reveal">
+              <div class="map-head">
+                <div>
+                  <div class="kicker">Visit</div>
+                  <div class="map-title">Our Location</div>
+                </div>
+                <a class="btn btn-ghost btn-sm" href="https://maps.google.com" target="_blank" rel="noreferrer"
+                  >Open in Maps</a
+                >
+              </div>
+              <div class="map-wrap" aria-label="Google Map">
+                <!-- Replace with your actual Google Maps embed link -->
+                <iframe
+                  title="Google Map"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps?q=New%20York&output=embed"
+                ></iframe>
+              </div>
+              <div class="contact-mini">
+                <div><span class="dot"></span> Mon–Sat, 8am–7pm</div>
+                <div><span class="dot"></span> Delivery & installation</div>
+                <div><span class="dot"></span> Maintenance plans</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a
+          class="whatsapp-fab"
+          href="https://wa.me/971561979833"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="WhatsApp support"
+        >
+          <span class="social-icon" data-icon="whatsapp"></span>
+          <span class="fab-text">WhatsApp</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <div class="brand-row">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-name">Al Hana Drinking Water</span>
+          </div>
+          <div class="muted small">
+            © <span id="year"></span> Al Hana Drinking Water. All rights reserved.
+          </div>
+        </div>
+        <div class="footer-right">
+          <a class="footer-link" href="#products">Products</a>
+          <a class="footer-link" href="#about">About</a>
+          <a class="footer-link" href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickView" aria-hidden="true" role="dialog">
+      <div class="modal-backdrop" data-close></div>
+      <div class="modal-card glass" role="document" aria-label="Quick view">
+        <button class="modal-close" type="button" aria-label="Close" data-close>
+          ×
+        </button>
+        <div class="modal-body">
+          <img id="qvImg" alt="" />
+          <div class="modal-copy">
+            <div class="kicker" id="qvCat"></div>
+            <h3 class="h3" id="qvName"></h3>
+            <p class="muted" id="qvDesc"></p>
+            <div class="modal-actions">
+              <a class="btn btn-primary" id="qvWhatsApp" target="_blank" rel="noreferrer"
+                >Order via WhatsApp</a
+              >
+              <a class="btn btn-ghost" href="#contact" data-close>Request pricing</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
